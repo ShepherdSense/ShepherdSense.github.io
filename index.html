@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draco's Projects</title>
+<meta name="description" content="Open tools and briefings built for warfighters: Shepherd, Skyline, Skynet Research, Pack Out, and SHEPHERDSINT.">
+<style>
+  :root {
+    --bg: #0d0d13;
+    --card: #16161f;
+    --line: #26263a;
+    --text: #e8e8f0;
+    --muted: #9a9ab0;
+    --purple: #8b5cf6;
+    --purple-soft: #a78bfa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  header { max-width: 960px; margin: 0 auto; padding: 56px 24px 24px; }
+  h1 { margin: 0; font-size: 2.2rem; letter-spacing: -0.02em; }
+  h1 span { color: var(--purple-soft); }
+  .tagline { color: var(--muted); font-size: 1.05rem; margin-top: 8px; }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8px 24px 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .card h2 { margin: 0 0 6px; font-size: 1.25rem; }
+  .card p { margin: 0 0 16px; color: var(--muted); }
+  .links a {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--purple);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .links a.secondary {
+    background: transparent;
+    border: 1px solid var(--purple);
+    color: var(--purple-soft);
+  }
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--purple-soft); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Draco's <span>Projects</span></h1>
+  <p class="tagline">Open tools and briefings, built for warfighters — everything in one place.</p>
+</header>
+<main>
+  <section class="card">
+    <h2>Shepherd</h2>
+    <p>Device-free RF sensing. See movement through a radio mesh's RF field — tripwire and mesh modes for perimeter and area sensing.</p>
+    <div class="links">
+      <a href="https://thedracospark-prog.github.io/Shepherd-/sim/">Web sim</a>
+      <a class="secondary" href="https://github.com/thedracospark-prog/Shepherd-">GitHub</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Skyline</h2>
+    <p>Shared, no-silos fleet picture for 18 ASOG and its squadrons — vehicles, authorizations, UTCs, and operator 1800 inspections.</p>
+    <div class="links">
+      <a href="https://thedracospark-prog.github.io/Skyline/sim/">Web sim</a>
+      <a class="secondary" href="https://github.com/thedracospark-prog/Skyline">GitHub</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Skynet Research</h2>
+    <p>Plain-English law library. Every rule beside the original, plus a drone-flight wizard and an offline LAANC grid.</p>
+    <div class="links">
+      <a href="https://thedracospark-prog.github.io/Skynet-Research/sim/">Web sim</a>
+      <a class="secondary" href="https://github.com/thedracospark-prog/Skynet-Research">GitHub</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Pack Out</h2>
+    <p>Tablet equipment checkout for the motor pool. Photo-per-item issue and return, built for the Tab S6 Lite.</p>
+    <div class="links">
+      <a href="https://thedracospark-prog.github.io/Pack-Out/sim/">Web sim</a>
+      <a class="secondary" href="https://github.com/thedracospark-prog/Pack-Out">GitHub</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>SHEPHERDSINT</h2>
+    <p>Daily OSINT briefing — Ukraine, Iran, and the weekly leader decision matrix.</p>
+    <div class="links">
+      <a href="https://muse.ai/s/shepherdsint-xvl6gx0xfsxdxfhxn/z77D2hRvYbjgNTx7LSXDFt2U5ZQYD5BJKUYSpjezKe0">Briefing</a>
+      <a class="secondary" href="https://thedracospark-prog.github.io/SHEPHERDSINT/">Mirror</a>
+      <a class="secondary" href="https://github.com/thedracospark-prog/SHEPHERDSINT">GitHub</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Web sims are the real apps running on simulated data in your browser — refresh resets them. Skyline's live fleet app runs on your own server; see its repo for run instructions. The SHEPHERDSINT mirror refreshes each morning.</p>
+</footer>
+</body>
+</html>
